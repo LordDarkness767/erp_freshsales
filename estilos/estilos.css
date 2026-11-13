@@ -1,0 +1,68 @@
+/* ==========================================================================
+   1. BASE (mòbil)
+   ========================================================================== */
+.layout {
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: ;
+  min-height: 100vh;
+}
+
+.ejemplo {
+  grid-row: ;
+  grid-column: ;
+}
+
+
+/* ==========================================================================
+   2. MEDIA QUERY: DES DE 380px (Mòbils grans)
+   ========================================================================== */
+@media screen and (min-width: 380px) {
+
+  .layout {
+    grid-template-columns: ;
+    grid-template-rows: ;
+  }
+
+  .ejemplo {
+    grid-row: ;
+    grid-column: ;
+  }
+
+}
+
+
+/* ==========================================================================
+   3. MEDIA QUERY: DES DE 750px (Tabletes horitzontals / Desktops petits)
+   ========================================================================== */
+@media screen and (min-width: 750px) {
+
+  .layout {
+    grid-template-columns: ;
+    grid-template-rows: ;
+  }
+
+  .ejemplo {
+    grid-row: ;
+    grid-column: ;
+  }
+
+}
+
+
+/* ==========================================================================
+   4. MEDIA QUERY: DES DE 1100px (Pantalles grans / Desktops)
+   ========================================================================== */
+@media screen and (min-width: 1100px) {
+
+  .layout {
+    grid-template-columns: ;
+    grid-template-rows: ;
+  }
+
+  .ejemplo {
+    grid-row: ;
+    grid-column: ;
+  }
+
+}
