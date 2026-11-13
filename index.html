@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
     RECORDATORIOS (revisar antes de entregar)
     - lang="en" -> cambiar al idioma real de la página (ca / es).
@@ -15,15 +15,115 @@
     - Validar en validator.w3.org antes de entregar.
 -->
 <html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExamenWeb</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshSales</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="js/funciones.js"></script>
+  </head>
+  <body>
     <div class="layout">
-        
+      <header class="header">
+        <div class="logo">
+          <img src="img/logoFreshsales.png" alt="LogoErp" />
+        </div>
+        <i class="fa-solid fa-bars" id="btnMenu"></i>
+        <nav>
+          <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </nav>
+        <div class="btns">
+          <button>LogIn</button>
+          <button>GetStarted</button>
+        </div>
+      </header>
+      <main class="main">
+        <h1>Impusla el teu negoci amb FreshSales</h1>
+        <br />
+        <div class="textHero">
+          <p>Gracies a la nostra ia t'ajudara a gestionar la teva empresa</p>
+          <button>Solicita demo</button>
+        </div>
+      </main>
+
+      <div class="keyFeatures">
+        <h2>Funcionalitats Clau</h2>
+        <p>Freshsales ofereix una gestioempresarial exelent</p>
+
+        <div class="cajas">
+          <div class="box">
+            <i class="fa-solid fa-address-book"></i>
+            <h3>Gestió de clients</h3>
+            <p>
+              Centralitza contactes, converses i historial de cada client en un
+              sol lloc.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Seguiment de vendes</h3>
+            <p>
+              Visualitza el teu pipeline i coneix l'estat de cada oportunitat en
+              temps real.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Automatització amb IA</h3>
+            <p>
+              Puntua leads, automatitza seguiments i rep suggeriments per tancar
+              més vendes.
+            </p>
+          </div>
+        </div>
+        <div class="cajas">
+          <div class="box">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Correu i telèfon integrats</h3>
+            <p>
+              Envia correus i fes trucades des del mateix CRM, sense canviar
+              d'eina.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3>Informes personalitzats</h3>
+            <p>
+              Crea quadres de comandament i analitza el rendiment de l'equip
+              comercial.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Accés des de qualsevol lloc</h3>
+            <p>
+              Consulta clients i tanca vendes des del mòbil, la tauleta o
+              l'ordinador.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <nav>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Contact us </a></li>
+          </ul>
+        </nav>
+        <div class="text">
+          <p>&copy;2026 FreshSales. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
