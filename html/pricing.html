@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <script src="../js/funciones.js"></script>
+    <title>Features</title>
+  </head>
+  <body>
+    <!doctype html>
+    <!--
+    RECORDATORIOS (revisar antes de entregar)
+    - lang="en" -> cambiar al idioma real de la página (ca / es).
+    - Todas las <img> con alt descriptivo (alt="" solo si es decorativa).
+    - Etiquetas semánticas: header, nav, main, section, article, footer.
+    - Solo un <h1> y títulos en orden (h1, h2, h3), sin saltos.
+    - Cada id es único; las clases pueden repetirse.
+    - Etiquetas cerradas y bien anidadas.
+    - Enlaces <a> con texto claro y href correcto.
+    - Rutas relativas correctas (estilos/estilos.css, img/foto.jpg),
+      sin espacios ni tildes en los nombres y con las mayúsculas exactas.
+    - Cada hijo del grid con grid-row / grid-column en cada media query.
+    - Probar en F12 (modo responsive) a 380, 750 y 1100px.
+    - Validar en validator.w3.org antes de entregar.
+-->
+    <html lang="ca">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FreshSales</title>
+        <link rel="stylesheet" href="css/estilos.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <script src="js/funciones.js"></script>
+      </head>
+      <body>
+        <div class="layout">
+          <header class="header">
+            <div class="logo">
+              <img src="../img/logoFreshsales.png" alt="LogoErp" />
+            </div>
+            <i class="fa-solid fa-bars" id="btnMenu"></i>
+            <nav>
+              <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="support.html">Support</a></li>
+              </ul>
+            </nav>
+            <div class="btns">
+              <button>LogIn</button>
+              <button>GetStarted</button>
+            </div>
+          </header>
+
+          <footer class="footer">
+            <nav>
+              <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="support.html">Support</a></li>
+              </ul>
+            </nav>
+            <div class="text">
+              <p>&copy;2026 FreshSales. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
