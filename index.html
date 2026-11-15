@@ -18,22 +18,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FreshSales: CRM amb intel·ligència artificial per gestionar clients, vendes i la teva empresa."
+    />
     <title>FreshSales</title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <script src="js/funciones.js"></script>
+    <script src="js/funciones.js" defer></script>
   </head>
   <body>
     <div class="layout">
       <header class="header">
         <div class="logo">
-          <img src="img/logoFreshsales.png" alt="LogoErp" />
+          <img src="img/logoFreshsales.png" alt="Logo de FreshSales" />
         </div>
-        <i class="fa-solid fa-bars" id="btnMenu"></i>
-        <nav>
+        <i
+          class="fa-solid fa-bars"
+          id="btnMenu"
+          role="button"
+          aria-label="Obrir el menú"
+        ></i>
+        <nav aria-label="Navegació principal">
           <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="html/features.html">Features</a></li>
@@ -42,85 +52,93 @@
           </ul>
         </nav>
         <div class="btns">
-          <button>LogIn</button>
-          <button>GetStarted</button>
+          <button type="button">LogIn</button>
+          <button type="button">GetStarted</button>
         </div>
       </header>
       <main class="main">
-        <h1>Impusla el teu negoci amb FreshSales</h1>
-        <br />
+        <h1>Impulsa el teu negoci amb FreshSales</h1>
         <div class="textHero">
-          <p>Gracies a la nostra ia t'ajudara a gestionar la teva empresa</p>
-          <button>Solicita demo</button>
+          <p>La nostra IA t'ajudarà a gestionar la teva empresa</p>
+          <button type="button">Sol·licita una demo</button>
         </div>
       </main>
 
-      <div class="keyFeatures">
+      <section class="keyFeatures">
         <h2>Funcionalitats Clau</h2>
-        <p>Freshsales ofereix una gestioempresarial exelent</p>
+        <p>FreshSales ofereix una gestió empresarial excel·lent</p>
 
-        <div class="cajas">
-          <div class="box">
-            <i class="fa-solid fa-address-book"></i>
-            <h3>Gestió de clients</h3>
+        <ul class="funcList">
+          <li class="func">
+            <div class="funcTitle">
+              <i class="fa-solid fa-address-book" aria-hidden="true"></i>
+              <h3>Gestió de clients</h3>
+            </div>
             <p>
               Centralitza contactes, converses i historial de cada client en un
               sol lloc.
             </p>
-          </div>
-          <div class="box">
-            <i class="fa-solid fa-chart-line"></i>
-            <h3>Seguiment de vendes</h3>
+          </li>
+          <li class="func">
+            <div class="funcTitle">
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+              <h3>Seguiment de vendes</h3>
+            </div>
             <p>
               Visualitza el teu pipeline i coneix l'estat de cada oportunitat en
               temps real.
             </p>
-          </div>
-          <div class="box">
-            <i class="fa-solid fa-robot"></i>
-            <h3>Automatització amb IA</h3>
+          </li>
+          <li class="func">
+            <div class="funcTitle">
+              <i class="fa-solid fa-robot" aria-hidden="true"></i>
+              <h3>Automatització amb IA</h3>
+            </div>
             <p>
               Puntua leads, automatitza seguiments i rep suggeriments per tancar
               més vendes.
             </p>
-          </div>
-        </div>
-        <div class="cajas">
-          <div class="box">
-            <i class="fa-solid fa-envelope"></i>
-            <h3>Correu i telèfon integrats</h3>
+          </li>
+          <li class="func">
+            <div class="funcTitle">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <h3>Correu i telèfon integrats</h3>
+            </div>
             <p>
               Envia correus i fes trucades des del mateix CRM, sense canviar
               d'eina.
             </p>
-          </div>
-          <div class="box">
-            <i class="fa-solid fa-chart-pie"></i>
-            <h3>Informes personalitzats</h3>
+          </li>
+          <li class="func">
+            <div class="funcTitle">
+              <i class="fa-solid fa-chart-pie" aria-hidden="true"></i>
+              <h3>Informes personalitzats</h3>
+            </div>
             <p>
               Crea quadres de comandament i analitza el rendiment de l'equip
               comercial.
             </p>
-          </div>
-          <div class="box">
-            <i class="fa-solid fa-mobile-screen"></i>
-            <h3>Accés des de qualsevol lloc</h3>
+          </li>
+          <li class="func">
+            <div class="funcTitle">
+              <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+              <h3>Accés des de qualsevol lloc</h3>
+            </div>
             <p>
               Consulta clients i tanca vendes des del mòbil, la tauleta o
               l'ordinador.
             </p>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </section>
       <footer class="footer">
-        <nav>
+        <nav aria-label="Enllaços legals">
           <ul>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Terms of Service</a></li>
-            <li><a href="">Contact us </a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact us</a></li>
           </ul>
         </nav>
-        <br>
         <div class="text">
           <p>&copy;2026 FreshSales. All rights reserved.</p>
         </div>

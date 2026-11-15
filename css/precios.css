@@ -1,0 +1,81 @@
+/* ==========================================================================
+   precios.css - estilos solo del contenido de html/pricing.html
+   Cargar DESPUÉS de estilos.css (el grid, header y footer ya vienen de allí)
+   ========================================================================== */
+
+/* Posición dentro del grid de .layout */
+.pricingPage {
+  grid-row: 2 / 4;
+  grid-column: 1 / -1;
+  padding: 20px;
+  text-align: center;
+  background-color: #f7f8fa;
+  color: #222;
+}
+
+.pricingPage > h1 {
+  margin-bottom: 10px;
+}
+
+.pricingPage > p {
+  margin: 0 auto 20px;
+  max-width: 600px;
+}
+
+/* ---------- Tarjetas de plan ---------- */
+.pricingPage .box {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 8px;
+}
+
+.pricingPage .box i {
+  font-size: 2em;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.pricingPage .box h2 {
+  margin-bottom: 8px;
+}
+
+.pricingPage .price {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.pricingPage .price span {
+  font-size: 0.4em;
+  font-weight: normal;
+  color: #666;
+}
+
+.pricingPage .plan ul {
+  margin-bottom: 15px;
+}
+
+.pricingPage .plan li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+}
+
+/* Plan destacado */
+.pricingPage .destacat {
+  border: 2px solid #1a73e8;
+}
+
+/* ---------- Desde 750px ---------- */
+@media screen and (min-width: 750px) {
+  .pricingPage .cajas {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .pricingPage .box {
+    flex: 1;
+  }
+}

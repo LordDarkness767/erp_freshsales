@@ -1,0 +1,103 @@
+/* ==========================================================================
+   soporte.css - estilos solo del contenido de html/support.html
+   Cargar DESPUÉS de estilos.css (el grid, header y footer ya vienen de allí)
+   ========================================================================== */
+
+/* Posición dentro del grid de .layout */
+.supportPage {
+  grid-row: 2 / 4;
+  grid-column: 1 / -1;
+  padding: 20px;
+  background-color: #f7f8fa;
+  color: #222;
+}
+
+/* ---------- Introducción ---------- */
+.supportPage .intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.supportPage .intro h1 {
+  margin-bottom: 10px;
+}
+.supportPage .intro p {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* ---------- Formulario + mapa (móvil: apilados) ---------- */
+.supportGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.supportPage h2 {
+  margin-bottom: 12px;
+}
+
+/* ---------- Formulario ---------- */
+.supportForm .field {
+  margin-bottom: 12px;
+}
+.supportForm label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.supportForm input[type="text"],
+.supportForm input[type="email"],
+.supportForm select,
+.supportForm textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #c4c9d0;
+  border-radius: 5px;
+  font: inherit;
+  background-color: #fff;
+}
+.supportForm textarea {
+  resize: vertical;
+}
+.supportForm input:focus,
+.supportForm select:focus,
+.supportForm textarea:focus {
+  outline: 2px solid #1a73e8;
+  border-color: #1a73e8;
+}
+.supportForm .check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.supportForm .check label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.supportForm button {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* ---------- Mapa ---------- */
+.supportMap iframe {
+  display: block;
+  width: 100%;
+  height: 22em;
+  border: 1px solid #c4c9d0;
+  border-radius: 10px;
+}
+.supportMap p {
+  margin-top: 8px;
+}
+
+/* ---------- Desde 750px: formulario a la izquierda, mapa a la derecha ---------- */
+@media screen and (min-width: 750px) {
+  .supportGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

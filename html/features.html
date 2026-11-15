@@ -1,78 +1,183 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/estilos.css" />
-    <script src="../js/funciones.js"></script>
-    <title>Features</title>
-  </head>
-  <body>
-    <!doctype html>
-    <!--
+<!--
     RECORDATORIOS (revisar antes de entregar)
-    - lang="en" -> cambiar al idioma real de la página (ca / es).
     - Todas las <img> con alt descriptivo (alt="" solo si es decorativa).
     - Etiquetas semánticas: header, nav, main, section, article, footer.
     - Solo un <h1> y títulos en orden (h1, h2, h3), sin saltos.
     - Cada id es único; las clases pueden repetirse.
-    - Etiquetas cerradas y bien anidadas.
-    - Enlaces <a> con texto claro y href correcto.
-    - Rutas relativas correctas (estilos/estilos.css, img/foto.jpg),
-      sin espacios ni tildes en los nombres y con las mayúsculas exactas.
+    - Rutas relativas correctas (esta página está en html/, por eso ../).
     - Cada hijo del grid con grid-row / grid-column en cada media query.
     - Probar en F12 (modo responsive) a 380, 750 y 1100px.
     - Validar en validator.w3.org antes de entregar.
 -->
-    <html lang="ca">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FreshSales</title>
-        <link rel="stylesheet" href="css/estilos.css" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        />
-        <script src="js/funciones.js"></script>
-      </head>
-      <body>
-        <div class="layout">
-          <header class="header">
-            <div class="logo">
-              <img src="../img/logoFreshsales.png" alt="LogoErp" />
-            </div>
-            <i class="fa-solid fa-bars" id="btnMenu"></i>
-            <nav>
-              <ul id="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="support.html">Support</a></li>
-              </ul>
-            </nav>
-            <div class="btns">
-              <button>LogIn</button>
-              <button>GetStarted</button>
-            </div>
-          </header>
-         
-
-         
-          <footer class="footer">
-            <nav>
-              <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms of Service</a></li>
-                <li><a href="">Contact us </a></li>
-              </ul>
-            </nav>
-            <div class="text">
-              <p>&copy;2026 FreshSales. All rights reserved.</p>
-            </div>
-          </footer>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features - FreshSales</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/features.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="../js/funciones.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="header">
+        <div class="logo">
+          <img src="../img/logoFreshsales.png" alt="LogoErp" />
         </div>
-      </body>
-    </html>
+        <i class="fa-solid fa-bars" id="btnMenu"></i>
+        <nav>
+          <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+        <div class="btns">
+          <button>LogIn</button>
+          <button>GetStarted</button>
+        </div>
+      </header>
+
+      <main class="featuresPage">
+        <h1>Visió general de funcionalitats</h1>
+        <p>
+          Descobreix el conjunt de funcionalitats de FreshSales pensades per
+          simplificar les operacions del teu negoci i millorar la relació amb
+          els clients.
+        </p>
+
+        <section class="keyFeatures">
+          <h2>Gestió de relacions amb clients (CRM)</h2>
+          <p>
+            El mòdul CRM ajuda els equips de vendes i màrqueting a gestionar
+            interaccions, fer seguiment de leads i fidelitzar clients.
+          </p>
+          <div class="cajas">
+            <div class="box">
+              <i class="fa-solid fa-address-book"></i>
+              <h3>Gestió de contactes</h3>
+              <p>
+                Centralitza les dades dels clients, l'historial de comunicació i
+                les interaccions.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-filter"></i>
+              <h3>Pipeline de vendes</h3>
+              <p>
+                Visualitza el procés de vendes, des de la generació de leads fins
+                al tancament, amb etapes personalitzables.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <h3>Automatització de màrqueting</h3>
+              <p>
+                Automatitza campanyes de correu i publicacions per captar
+                clients potencials.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-headset"></i>
+              <h3>Atenció al client</h3>
+              <p>
+                Ofereix un servei excepcional amb tiquets, base de coneixement i
+                xat en directe.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="keyFeatures">
+          <h2>Planificació de recursos empresarials (ERP)</h2>
+          <p>
+            El mòdul ERP integra els processos clau del negoci, com finances,
+            inventari i operacions, per a una gestió àgil i eficient.
+          </p>
+          <div class="cajas">
+            <div class="box">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Gestió financera</h3>
+              <p>
+                Gestiona les finances amb facturació, control de despeses i
+                informes per decidir millor.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-boxes-stacked"></i>
+              <h3>Gestió d'inventari</h3>
+              <p>
+                Optimitza els nivells d'estoc, segueix els moviments i
+                automatitza les reposicions.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <h3>Gestió de comandes</h3>
+              <p>
+                Agilita el procés des de la comanda fins a l'entrega, garantint
+                terminis i satisfacció.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h3>Cadena de subministrament</h3>
+              <p>
+                Coordina el flux de béns i serveis dels proveïdors als clients.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="keyFeatures">
+          <h2>Altres mòduls</h2>
+          <div class="cajas">
+            <div class="box">
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3>Gestió de projectes</h3>
+              <p>
+                Planifica, executa i controla projectes amb tasques, terminis i
+                seguiment de l'equip.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-users"></i>
+              <h3>Recursos humans</h3>
+              <p>
+                Gestiona la informació dels empleats, les nòmines i els
+                beneficis en un sol lloc.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-chart-pie"></i>
+              <h3>Analítica i informes</h3>
+              <p>
+                Obtén informació del rendiment del negoci amb quadres de comandament
+                i informes personalitzats.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <nav>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Contact us </a></li>
+          </ul>
+        </nav>
+        <div class="text">
+          <p>&copy;2026 FreshSales. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

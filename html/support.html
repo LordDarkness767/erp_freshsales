@@ -1,76 +1,129 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/estilos.css" />
-    <script src="../js/funciones.js"></script>
-    <title>Features</title>
-  </head>
-  <body>
-    <!doctype html>
-    <!--
+<!--
     RECORDATORIOS (revisar antes de entregar)
-    - lang="en" -> cambiar al idioma real de la página (ca / es).
     - Todas las <img> con alt descriptivo (alt="" solo si es decorativa).
     - Etiquetas semánticas: header, nav, main, section, article, footer.
     - Solo un <h1> y títulos en orden (h1, h2, h3), sin saltos.
     - Cada id es único; las clases pueden repetirse.
-    - Etiquetas cerradas y bien anidadas.
-    - Enlaces <a> con texto claro y href correcto.
-    - Rutas relativas correctas (estilos/estilos.css, img/foto.jpg),
-      sin espacios ni tildes en los nombres y con las mayúsculas exactas.
+    - Rutas relativas correctas (esta página está en html/, por eso ../).
     - Cada hijo del grid con grid-row / grid-column en cada media query.
     - Probar en F12 (modo responsive) a 380, 750 y 1100px.
     - Validar en validator.w3.org antes de entregar.
 -->
-    <html lang="ca">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FreshSales</title>
-        <link rel="stylesheet" href="css/estilos.css" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        />
-        <script src="js/funciones.js"></script>
-      </head>
-      <body>
-        <div class="layout">
-          <header class="header">
-            <div class="logo">
-              <img src="../img/logoFreshsales.png" alt="LogoErp" />
-            </div>
-            <i class="fa-solid fa-bars" id="btnMenu"></i>
-            <nav>
-              <ul id="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="support.html">Support</a></li>
-              </ul>
-            </nav>
-            <div class="btns">
-              <button>LogIn</button>
-              <button>GetStarted</button>
-            </div>
-          </header>
-
-          <footer class="footer">
-            <nav>
-              <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms of Service</a></li>
-                <li><a href="">Contact us </a></li>
-              </ul>
-            </nav>
-            <div class="text">
-              <p>&copy;2026 FreshSales. All rights reserved.</p>
-            </div>
-          </footer>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contacta amb el suport de FreshSales: formulari de contacte i ubicació."
+    />
+    <title>Support - FreshSales</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/soporte.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="../js/funciones.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="header">
+        <div class="logo">
+          <img src="../img/logoFreshsales.png" alt="Logo de FreshSales" />
         </div>
-      </body>
-    </html>
+        <i
+          class="fa-solid fa-bars"
+          id="btnMenu"
+          role="button"
+          aria-label="Obrir el menú"
+        ></i>
+        <nav aria-label="Navegació principal">
+          <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+        <div class="btns">
+          <button type="button">LogIn</button>
+          <button type="button">GetStarted</button>
+        </div>
+      </header>
+
+      <main class="supportPage">
+        <div class="intro">
+          <h1>Suport</h1>
+          <p>
+            Tens algun dubte o problema? Escriu-nos i el nostre equip et
+            respondrà el més aviat possible.
+          </p>
+        </div>
+
+        <div class="supportGrid">
+          <section class="supportForm">
+            <h2>Envia'ns un missatge</h2>
+            <form action="#" method="post">
+              <div class="field">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required />
+              </div>
+              <div class="field">
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="assumpte">Assumpte</label>
+                <select id="assumpte" name="assumpte">
+                  <option value="general">Consulta general</option>
+                  <option value="tecnic">Problema tècnic</option>
+                  <option value="facturacio">Facturació</option>
+                  <option value="demo">Demo</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="missatge">Missatge</label>
+                <textarea
+                  id="missatge"
+                  name="missatge"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="check">
+                <input type="checkbox" id="privacitat" name="privacitat" required />
+                <label for="privacitat">Accepto la política de privacitat</label>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+
+          <section class="supportMap">
+            <h2>On som</h2>
+            <iframe
+              title="Mapa de la ubicació de FreshSales"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=2.1600%2C41.3820%2C2.1800%2C41.3920&amp;layer=mapnik&amp;marker=41.3870%2C2.1700"
+              loading="lazy"
+            ></iframe>
+            <p>Plaça de Catalunya, 08002 Barcelona</p>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <nav aria-label="Enllaços legals">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="text">
+          <p>&copy;2026 FreshSales. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

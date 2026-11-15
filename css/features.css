@@ -1,0 +1,67 @@
+/* ==========================================================================
+   contenido.css - estilos solo del contenido de html/features.html
+   Cargar DESPUÉS de estilos.css (el grid, header y footer ya vienen de allí)
+   ========================================================================== */
+
+/* Posición dentro del grid de .layout */
+.featuresPage {
+  grid-row: 2 / 4;
+  grid-column: 1 / -1;
+  padding: 20px;
+  text-align: center;
+  background-color: #f7f8fa;
+  color: #222;
+}
+
+.featuresPage > h1 {
+  margin-bottom: 10px;
+}
+
+.featuresPage > p {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* ---------- Secciones ---------- */
+.featuresPage .keyFeatures {
+  margin-top: 30px;
+}
+
+.featuresPage .keyFeatures > p {
+  margin: 10px auto 20px;
+  max-width: 600px;
+}
+
+/* ---------- Tarjetas ---------- */
+.featuresPage .box {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 8px;
+}
+
+.featuresPage .box i {
+  font-size: 2em;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.featuresPage .box h3 {
+  margin-bottom: 8px;
+}
+
+.featuresPage .box p {
+  font-size: 0.9em;
+}
+
+/* ---------- Desde 750px ---------- */
+@media screen and (min-width: 750px) {
+  .featuresPage .cajas {
+    display: flex;
+    justify-content: center;
+  }
+  .featuresPage .box {
+    flex: 1;
+  }
+}

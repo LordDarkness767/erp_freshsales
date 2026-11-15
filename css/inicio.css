@@ -1,0 +1,55 @@
+/* ==========================================================================
+   inicio.css - estilos solo de la lista de funcionalidades de index.html
+   Cargar DESPUÉS de estilos.css (el grid, header, hero y footer ya vienen de allí)
+   ========================================================================== */
+
+.keyFeatures {
+  padding: 20px;
+  background-color: #f7f8fa;
+  color: #222;
+}
+.keyFeatures > p {
+  margin: 8px auto 20px;
+  max-width: 600px;
+}
+
+/* ---------- Lista de filas con línea separadora (móvil) ---------- */
+.funcList {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.funcList .func {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #d0d5dd;
+}
+.funcList .func:first-child {
+  border-top: 1px solid #d0d5dd;
+}
+
+.funcTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.funcTitle i {
+  width: 1.5em;
+  text-align: center;
+  font-size: 1.4em;
+  color: #1a73e8;
+}
+
+/* ---------- Desde 750px: título a la izquierda, descripción a la derecha ---------- */
+@media screen and (min-width: 750px) {
+  .funcList .func {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 0;
+  }
+}
